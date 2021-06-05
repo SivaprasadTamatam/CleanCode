@@ -13,4 +13,4 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 
-[Solution](https://github.com/SivaprasadTamatam/CleanCode/blob/main/Arrays-Strings/TwoSum.cpp)
+[Solution](https://github.com/SivaprasadTamatam/CleanCode/blob/main/Arrays-Strings/)
