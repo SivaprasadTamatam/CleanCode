@@ -50,12 +50,34 @@ vector<int> TwoSum(vector<int> nums, int target){
     return res;
 }
 
+
+vector<int> TwoSumThroughPointers(vector<int> nums, int target){
+    int i =0, j = nums.size()-1;
+    vector<int> res;
+    while(i<j){
+        int sum = nums[i]+nums[j];
+        if(sum > target){
+            --j;
+        } else if(sum < target){
+            ++i;
+        } else{
+            res.push_back(i);
+            res.push_back(j);
+            return res;
+        }
+    }
+    return res;
+}
 #include<iostream>
 using namespace std;
 int main(){
     vector< int> nums = {2,7,11,15};
     
     vector<int> res = TwoSum(nums, 9);
+
+    cout<< res[0] << ","<<res[1]<<endl;
+
+    res = TwoSumThroughPointers(nums, 9);
 
     cout<< res[0] << ","<<res[1]<<endl;
 
